@@ -25,6 +25,14 @@
 // secondo metodo
 let parola = prompt('inserisci parola');
 
+function palindrome(parola) {
+
+    let palindrome = parola.split('').reverse().join('');
+    return palindrome;
+    
+}
+
+
 let carattere = parola.split('');
 carattere = carattere.reverse();
 let palindrome = carattere.join('');
@@ -50,12 +58,6 @@ if (parola == parolaInversa) {
 
 
 
-function palindrome(parola) {
-
-    let palindrome = parola.split('').reverse().join('');
-    return palindrome;
-    
-}
 
 
 
