@@ -10,16 +10,21 @@ let parola = prompt('inserisci parola');
 
 // console.log(palindrome);
 
-let somma = palindrome(parola);
+let parolaInversa = palindrome(parola);
 
+console.log(parolaInversa);
 
-
-if (parola == palindrome) {
+if (parola == parolaInversa) {
 
     console.log('parola palindrome');
+    document.writeln(parola)
+    document.writeln(parolaInversa + ' sono palindrome')
+    
     
 }else{
     console.log('non sono palindrome');
+    document.writeln(parola)
+    document.writeln(parolaInversa + ' non sono palindrome')
 }
 
 
@@ -30,6 +35,11 @@ function palindrome(parola) {
     return palindrome;
     
 }
+
+
+
+
+
 
 
 // // Pari e Dispari
